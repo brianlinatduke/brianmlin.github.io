@@ -1,12 +1,11 @@
-nmlin.org Documentation
-=======================
+Organization
+============
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :glob:
-   
-   reviews/index
-   organization/index
-   
+	
+   *
+
 .. Indices and tables
 .. ==================
 

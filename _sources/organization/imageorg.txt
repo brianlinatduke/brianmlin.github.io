@@ -1,0 +1,53 @@
+==================
+Image Organization
+==================
+
+-------------------------
+Folder-Based Organization
+-------------------------
+
+This organization houses similar images as albums in folders. 
+
+Sample Structure:
+
+BadPaintings/
+	High quality anime girl images ranging from Tier 3 to Tier 1
+	
+	Notables/ contains the creme de la creme pf BadPaintings/
+	
+Draw/ 
+	Subjects for drawings; sample drawings
+	
+Wallpapers/
+	Large, high quality anime images to be used as desktop wallpapers
+	
+Anime Stuf/ 
+	Assorted anime images; subject does not matter
+	
+Webs/
+	Tier 1 and Tier 0 content
+	
+Win/ 
+	Pictures of people from real life
+	
+Misc/ 
+	Random stuff from reddit
+	
+Albums for viewing can either be assembled into PDFs or imported into iPhoto. 	
+	
+Pros
+====
+
+* Easily backed up via Google Drive, Imgur, hard drive, etc.
+
+* Viewable on both Mac and Windows machines
+
+* Can use Preview to create PDFs
+
+* Raw content easily accessible
+
+Cons
+====
+
+* Can only view using Finder, which sucks
+
