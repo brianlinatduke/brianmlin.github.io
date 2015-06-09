@@ -1,4 +1,0 @@
-=========================
-Android Integration Guide
-=========================
-Customers may request the Android Integration Guide by contacting support@clairvista.com.
