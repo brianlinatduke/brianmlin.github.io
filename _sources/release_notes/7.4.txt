@@ -1,0 +1,76 @@
+===
+7.4
+===
+
+.. _cce:
+
+---------------
+Cross Component
+---------------
+
+Enhancements
+============
+* Added a file transfer progress dialog when retrieving files from the Live Expert Station, with options to directly open the transferred file or its containing folder (#4686).
+* Added echo cancellation, enabled by default, for all WebRTC endpoints (includes Anywhere, Station, and Mobile) (#4708).
+
+Bug Fixes
+=========
+* Fixed issues where the Live Expert Studio’s Session Setup Helper could display an incorrect status if a Live Expert Anywhere browser was refreshed, or a call was restarted from the Studio during audio type selection (#4407, #4725).
+* Fixed an issue where a Live Expert Mobility call could disconnect when restarted from the Live Expert Studio (#4831).
+
+----------
+Enterprise
+----------
+
+Enhancements
+============
+* Moved direct request creation from the User tab to the Company tab. Direct requests may now also be created for categories, experts, or both together (#4604).
+* Added “Camera State” and “Microphone State” controls to the Widget Builder (#4658).
+* Added four new columns to the Session Lookup View: ”Request Time”, "Session Start”, “Category ID”, and “Duration” (#4702).
+* Added detailed instructions on how to utilize Studio Tab Ordering and Naming (#4717).
+* Added a link to customer documentation available at docs.liveexpert.net (#4739).
+
+Bug Fixes
+=========
+* Fixed the Update Agent Time Summary Report to include all unavailable statuses (#4630).
+
+------
+Studio
+------
+
+Enhancements
+============
+* The Live Expert Studio will now display a warning notification in red when a new version is available, prompting to exit and restart the Studio (#4685).
+* See Cross Component Enhancements for additional Studio Enhancements.
+
+-------
+Station
+-------
+
+Enhancements
+============
+See :ref:`Cross Component Enhancements <cce>`.
+
+Bug Fixes
+=========
+* Fixed an issue connecting to a card reader on a TP70 kiosk running Windows 7 (#4749).
+* Fixed an issue where a WebRTC Station with multiple configured languages did not play the correct Connecting movie when using an alternate language (#4769).
+* Fixed an issue where a WebRTC Station with multiple configured languages did not return to its primary configured language after a call in an alternate language (#4770).
+
+--------
+Anywhere
+--------
+
+Enhancements
+============
+* See Cross Component Enhancements.
+
+--------
+Mobility
+--------
+
+Bug Fixes
+=========
+* Fixed an issue where a clicking noise would occur when an agent muted their microphone (#4762).
+* Fixed an issue where call notification banners would not appear or a call could disconnect while the application was minimized (#4825 #4826).
+* See Cross Component Bug Fixes for additional Bug Fixes.

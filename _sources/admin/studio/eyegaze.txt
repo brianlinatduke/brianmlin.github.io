@@ -1,0 +1,29 @@
+============================
+LE Studio Eye Gaze Solutions
+============================
+
+.. raw:: latex
+
+	\iffalse
+	
+.. .. note:: A PDF version of this guide is available for :download:`download </_build/latex/AdminStudio.pdf>`.
+
+.. raw:: latex
+
+	\fi
+
+--------------
+Second Display
+--------------
+
+The following diagram demonstrates how to setup a second display exclusively for customer video:
+
+.. image:: _static/gaze1.png
+
+--------------
+Two-way Mirror
+--------------
+
+The following diagram demonstrates how to setup a two-way mirror to allow the agent to look directly at the camera while viewing the LE Studio monitor:
+
+.. image:: _static/gaze2.png

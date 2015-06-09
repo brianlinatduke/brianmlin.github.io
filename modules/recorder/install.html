@@ -1,0 +1,536 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Installation Guide &mdash; Live Expert Documentation 7.4.0 documentation</title>
+  <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <link rel="icon" sizes="192x192" href="touch-icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+  
+
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+
+    <link rel="top" title="Live Expert Documentation 7.4.0 documentation" href="../../index.html"/>
+        <link rel="up" title="Recorder" href="index.html"/>
+    
+    
+ 
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="../../index.html"> Live Expert Documentation</a>
+        
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" autocapitalize="off" autocorrect="off" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../anywhere/index.html">Anywhere</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../anywhere/web.html">Web Developer Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../anywhere/web.html#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../anywhere/web.html#id1">Live Expert Widget</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../anywhere/web.html#id2">Direct Access API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../anywhere/web.html#configuration-parameters">Configuration Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../anywhere/web.html#custom-session-fields">Custom Session Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../anywhere/web.html#customer-session-tracking">Customer Session Tracking</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../enterprise/index.html">Enterprise</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/availability_check_api.html">Expert Availability Check API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/availability_check_api.html#overview">Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/data_export_api.html">Data Export API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/data_export_api.html#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/data_export_api.html#lookup-interface-details">Lookup Interface Details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/data_export_api.html#download-interface-details">Download Interface Details</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/oauth.html">OAuth Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/oauth.html#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/oauth.html#obtaining-an-oauth-token">Obtaining an OAuth Token</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/oauth.html#using-an-oauth-token">Using an OAuth Token</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/user.html">User Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/user.html#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/user.html#id1">Company</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/user.html#id2">Users</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/user.html#studio-configuration">Studio Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/user.html#id8">Locations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/user.html#id12">Stations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/user.html#id14">Reports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/user.html#expert-availability-api">Expert Availability API</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../mobility/index.html">Mobility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../mobility/android_integration.html">Android Integration Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mobility/ios_integration.html">iOS Integration Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mobility/mobility_sdk.html">Mobility SDK</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../station/index.html">Station</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../station/admin.html">Station Admin Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../station/admin.html#preparation-installation">Preparation &amp; Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../station/admin.html#configuration">Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../station/admin.html#le-station-printer-setup">LE Station Printer Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../station/admin.html#quick-tips">Quick Tips</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../station/admin.html#automatic-station-startup">Automatic Station Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../station/admin.html#station-kiosk-security">Station Kiosk Security</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../station/admin.html#ongoing-maintenance">Ongoing Maintenance</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../studio/index.html">Studio</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../studio/install.html">Studio Silent Install Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../studio/install.html#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../studio/install.html#installation-requirements">Installation Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../studio/install.html#downloading-the-prerequisites-and-installer">Downloading the Prerequisites and Installer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../studio/install.html#installing-the-prerequisites-and-the-le-studio-updater">Installing the Prerequisites and the LE Studio Updater</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../studio/user.html">Studio User Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../studio/user.html#getting-started">Getting Started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../studio/user.html#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../studio/user.html#menu-bar">Menu Bar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../studio/user.html#agent-name-display">Agent Name Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../studio/user.html#status-indicator">Status Indicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../studio/user.html#availability-flag">Availability Flag</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../studio/user.html#queue-indicator">Queue Indicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../studio/user.html#video">Video</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../studio/user.html#studio-tabs">Studio Tabs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../studio/user.html#notifications">Notifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../studio/user.html#studio-workflow">Studio Workflow</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Modules</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../collaborate/index.html">Collaborate</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../collaborate/guide.html">Deployment Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../companion/index.html">Companion</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../companion/brief.html">Brief: Live Expert Companion for Existing Kiosks</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Recorder</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Installation Guide</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../release_notes/index.html">Changes in Live Expert</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../release_notes/7.4.html">7.4</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.4.html#cross-component">Cross Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.4.html#enterprise">Enterprise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.4.html#studio">Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.4.html#station">Station</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.4.html#anywhere">Anywhere</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.4.html#mobility">Mobility</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../release_notes/7.5.html">7.5</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.5.html#cross-component">Cross Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.5.html#anywhere">Anywhere</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.5.html#enterprise">Enterprise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.5.html#station">Station</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.5.html#studio">Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.5.html#mobility">Mobility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.5.html#collaborate">Collaborate</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../release_notes/7.6.html">7.6</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.6.html#cross-component">Cross Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.6.html#anywhere">Anywhere</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.6.html#enterprise">Enterprise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.6.html#studio">Studio</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">Live Expert Documentation</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../index.html">Modules</a> &raquo;</li>
+      
+          <li><a href="index.html">Recorder</a> &raquo;</li>
+      
+    <li>Installation Guide</li>
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="installation-guide">
+<h1>Installation Guide<a class="headerlink" href="#installation-guide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="components">
+<h3>Components<a class="headerlink" href="#components" title="Permalink to this headline">¶</a></h3>
+<p>The LE Recorder is a supplemental component for the Live Expert System. It provides the ability to capture content on a Studio machine and upload it to a storage server for offline reviewing and auditing.</p>
+<p>LE Recorder makes use of four applications within the Live Expert System. Below is a description of each application’s responsibilities within the context of the Recorder feature:</p>
+<div class="section" id="le-enterprise">
+<h4>LE Enterprise<a class="headerlink" href="#le-enterprise" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Provides access to all configuration values for the capture and storage of call recordings.</li>
+<li>Provides an interface to lookup call recordings based upon call attributes, download and view call recordings, mark call recordings to * be saved, and store notes associated with a call recording.</li>
+</ul>
+</div>
+<div class="section" id="le-studio">
+<h4>LE Studio<a class="headerlink" href="#le-studio" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Captures a configurable area of the agent’s display(s):
+* All display or primary display recording
+* LE Studio application window recording
+* Video chat only
+* Audio only</li>
+<li>Moves the file to a configurable location upon completion of the recording to hand it off to the Recording Transfer Service.</li>
+</ul>
+</div>
+<div class="section" id="recording-transfer-service">
+<h4>Recording Transfer Service<a class="headerlink" href="#recording-transfer-service" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Receives call recordings from the LE Studio and uploads them to the LE Recorder Server.</li>
+<li>Uploads call recordings when the host machine is not under heavy load.</li>
+<li>Manages upload retries and failure logic when the LE Recorder Server is not available.</li>
+</ul>
+</div>
+<div class="section" id="le-recorder-server">
+<h4>LE Recorder Server<a class="headerlink" href="#le-recorder-server" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Validates and receives call recordings from the Recording Transfer Service.&lt;br&gt;Houses call recordings.</li>
+<li>Manages the storage volume by executing the desired storage policy for recorded files</li>
+<li>Exposes a URL by which each call recording can be downloaded.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="network-protocols-and-ports-used">
+<h3>Network Protocols and Ports Used<a class="headerlink" href="#network-protocols-and-ports-used" title="Permalink to this headline">¶</a></h3>
+<p>The following diagram outlines the deployment of these applications, as well as the protocols and ports used to facilitate their communication.</p>
+</div>
+</div>
+<div class="section" id="le-recorder-installation-instructions">
+<h2>LE Recorder Installation Instructions<a class="headerlink" href="#le-recorder-installation-instructions" title="Permalink to this headline">¶</a></h2>
+<p>Both the Enterprise and Studio applications have all required components bundled into their initial deployments, requiring only configuration changes to enable them. However, the Recording Transfer Service and LE Recorder Server are separate applications that must be installed independently.</p>
+<div class="section" id="recording-transfer-service-installation">
+<h3>Recording Transfer Service Installation<a class="headerlink" href="#recording-transfer-service-installation" title="Permalink to this headline">¶</a></h3>
+<p>The transfer service should be installed on the Studio machine as an administrative service. Upon request we will provide a Windows installer to deploy this service on any machines on which you wish to enable recording.</p>
+<p>Once the service is installed, it will start automatically when the machine boots up and runs at all times in the background, waiting for call recordings to be delivered to it by the Studio.</p>
+</div>
+<div class="section" id="live-expert-recorder-server-installation">
+<h3>Live Expert Recorder Server Installation<a class="headerlink" href="#live-expert-recorder-server-installation" title="Permalink to this headline">¶</a></h3>
+<p>The Recorder Server has been developed as a Java WAR that can be deployed in a number of application servers. It was developed and tested against the Apache Tomcat 7.0 server and we recommend using this for production deployments.</p>
+<p>To install this component, perform the following steps:</p>
+<ol class="arabic simple">
+<li>Download and install the latest Java JDK.</li>
+<li>Set the JAVA_HOME environment variable to the JDK base directory.</li>
+<li>Download the latest Apache Tomcat Server from <a class="reference external" href="http://tomcat.apache.org/">http://tomcat.apache.org/</a>.&lt;br&gt;Select the Core Binary Distribution for the appropriate version of Windows on which you are deploying.</li>
+<li>Unpack this deployment into a known location on the Recorder Server.</li>
+<li>Set a CATALINA_HOME environment variable to the Tomcat installation directory.</li>
+<li>Upon request, we will provide a recorder.war file, which can be deployed into the CATALINA_HOMEwebappsdirectory.&lt;br&gt;If you are upgrading the Live Expert Recorder Server, remove any previous recorder.war to a different location as a backup, as well as any webappsrecorderdirectory that may have been previously created.</li>
+<li>To create a service that will start and stop Tomcat execute the following command: “%CATALINA_HOME%binservice.bat install LERecorder”&lt;br&gt;This will create a service with an ID of LERecorder and a display name of “Apache Tomcat LERecorder”</li>
+<li>To configure the Live Expert Recorder Server the following Windows Environment Variables will need to be created or updated (previously configured in <code class="docutils literal"><span class="pre">CATALINA_HOME\webapps\recorder\WEB-INF\servlet-context.xml</span></code>)</li>
+<li>With the recorder.war in the webappsdirectory, start Tomcat.</li>
+<li>In addition to the required settings, there are a number of configuration values that can be set, which are described in the Live Expert Recorder Configuration Options section.</li>
+<li>System administrators should be aware of the following:</li>
+</ol>
+<ul class="simple">
+<li>The logs for this application can be found at CATALINA_HOMElogslerecorder-stdout.*.log and CATALINA_HOMElogslerecorder-stderr.*.log where the ‘*’ is replaced by the date for the log file.</li>
+<li>The hard drive utilization will need to be monitored to ensure that there is sufficient disk space to keep files for the full retention timeframe.</li>
+<li>By default Tomcat is deployed on port 8080.</li>
+<li>This can be updated in the CATALINA_HOMEconfserver.xml file.</li>
+<li>If the server is being run on anything other than port 80, the port needs to be included in the Recorder Server hostname configurations in both the Enterprise and Recorder Server.</li>
+<li>Tomcat exposes a wealth of configuration options. System administrators are advised to configure Tomcat for its target environment.</li>
+</ul>
+<p>Windows Environment Variables:</p>
+<dl class="docutils">
+<dt>CLAIRVISTA_RECORDER_ACTIVEMQ_JMSID</dt>
+<dd>Includes the Recorder ID (e.g. “recorder/1”)</dd>
+<dt>CLAIRVISTA_RECORDER_ACTIVEMQ_URL</dt>
+<dd>This is the URL and PORT for ActiveMQ (e.g. ”<a class="reference external" href="tcp://liveexpert.net:61616?wireFormat.maxInactivityDuration=0">tcp://liveexpert.net:61616?wireFormat.maxInactivityDuration=0</a>&#8221;)</dd>
+<dt>CLAIRVISTA_RECORDER_DESTINATION_DIR</dt>
+<dd>The root directory on the Recorder server for storing all recording files. (e.g. “C:recordings”)</dd>
+<dt>CLAIRVISTA_RECORDER_ID</dt>
+<dd>The Recorder ID (e.g. “1”)</dd>
+<dt>CLAIRVISTA_RECORDER_POST_URL</dt>
+<dd>This is the URL at which this instance of LERecorder can be reached (e.g. “<a class="reference external" href="http://liveexpert.net/liveexpert/leservlet/recorder">http://liveexpert.net/liveexpert/leservlet/recorder</a>&#8221;)</dd>
+<dt>CLAIRVISTA_RECORDER_TRANSIT_DIR</dt>
+<dd>This is the sub-directory in which recordings are processed (e.g. “inTransit”)</dd>
+<dt>CLAIRVISTA_RECORDER_URL_PATH</dt>
+<dd>This is the URL at which this instance of LERecorder can be reached (e.g. “recorder.liveexpert.net:8080/recorder/download/&#8221;)</dd>
+</dl>
+</div>
+<div class="section" id="live-expert-recorder-configuration-options">
+<h3>Live Expert Recorder Configuration Options<a class="headerlink" href="#live-expert-recorder-configuration-options" title="Permalink to this headline">¶</a></h3>
+<p>The following configuration options are exposed for this feature.</p>
+<div class="section" id="enterprise-configurations">
+<h4>Enterprise Configurations<a class="headerlink" href="#enterprise-configurations" title="Permalink to this headline">¶</a></h4>
+<p>These values are exposed through the Enterprise’s HTML interface.</p>
+<div class="section" id="company">
+<h5>Company<a class="headerlink" href="#company" title="Permalink to this headline">¶</a></h5>
+<p>Recording Enabled: Allows for recording to be enabled/disabled on a company wide basis. This must be enabled in order for any recordings to be captured.</p>
+</div>
+<div class="section" id="studio-settings">
+<h5>Studio Settings<a class="headerlink" href="#studio-settings" title="Permalink to this headline">¶</a></h5>
+<p>Recorder Enabled: Allows for recordings to be enabled for a specific group of agents.
+Recorder Server: Assigns a Recorder Server to which this group of Studios will upload their call recordings.
+Bitrate: Sets a target recording bitrate, allowing you to manage the tradeoff between video quality and file size. (Default: 30,000)
+Content to Capture: Defines the region of an agent’s screen that will be captured in the recording. This can be set to one of the following five values:
+All Screens: All screens attached to the agents machine will be recorded.
+Primary Screen: The primary screen, as defined by the operating system, will be recorded.
+Studio Application: The Studio application window will be recorded.
+Studio Video: The video components of the Studio application, both playback and remote video, will be recorded.
+Audio Only: The audio for both the agent and customer will be recorded. No video will be captured.
+LEStudio PC Transfer Directory: Specifies the directory on the Studio machine into which recording files should be placed when they are ready to be uploaded. (Default: C:/tmp)
+Upload Failure Action: The action to be taken if a file is unable to be uploaded to the specified recorder server. This can be set to one of the following two values (Default: Delete):
+Keep: The file will be copied to another directory on the Studio machine for safekeeping.
+Delete: The file will be deleted from the Studio machine without any backup or recovery available.
+LEStudio PC Failed Upload Directory: Specifies the directory on the Studio machine into which recordings that were unable to be uploaded should be stored. (Default: C:/tmp/keep)</p>
+</div>
+<div class="section" id="recorder-server">
+<h5>Recorder Server<a class="headerlink" href="#recorder-server" title="Permalink to this headline">¶</a></h5>
+<p>Hostname: The location of the Recorder Server. This will be used by the Enterprise and Transfer Service to communicate with this server.
+Use SSL: Indicates whether or not the server supports SSL communication. If so, the Transfer service will use the HTTPS protocol to upload files.
+Maximum Upload Retry Count: Sets the maximum number of upload attempts for the Transfer Service before it deems the file unable to be uploaded. (Default: 3)
+Seconds to Wait Between Upload Retries: Sets the number of seconds that the Transfer Service will wait between each attempt to upload a given file to the recorder server. (Default: 30)</p>
+</div>
+</div>
+<div class="section" id="recorder-server-configurations">
+<h4>Recorder Server Configurations<a class="headerlink" href="#recorder-server-configurations" title="Permalink to this headline">¶</a></h4>
+<p>Within the /WEB-INF/classes/ directory of the WAR file is a recorder.properties file, which allows for the following configuration values to be set:</p>
+<div class="section" id="recorder-server-properties">
+<h5>Recorder Server Properties<a class="headerlink" href="#recorder-server-properties" title="Permalink to this headline">¶</a></h5>
+<p>readBufferBytes: The size of the network input byte buffer used for file uploads. We do not recommend changing this value.
+maxFailedPing: The number of failed Enterprise ping requests that will result in the Recorder Server entering a disconnected state. Pings are sent every 15 seconds.
+hoursKept: The number of hours that recordings should be kept before being cleaned up, unless it has been marked as saved.
+Note: If the disk becomes nearly full and a cleanup is forced, this may result in files being deleted before this amount of time has elapsed.
+percentCleanDisk: The maximum, as a percentage of free disk space, that is considered a healthy amount of disk space. When a cleanup is forced, it will delete files to reach this percentage of free disk space.
+percentRemainingDisk: The threshold, as a percentage of free disk space, that will force a cleanup of files down to the percentCleanDisk.
+destinationDir: The root directory on the Recorder server  for storing all recording files.
+Note: Use double backslashes “\” for directory separators.
+transitDir: A subdirectory of the destinationDir in which files will be buffered during the upload process.
+jmsID: The hostname assigned to this Recorder Server. This is used in this server’s communication with the Enterprise, therefore this must match the hostname for a Recorder Server configured in the Enterprise.
+urlPath: The URL prefix used to download call recording files. This should include the Recorder Server’s hostname, but not a protocol.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="security-features-recommendations">
+<h2>Security Features &amp; Recommendations<a class="headerlink" href="#security-features-recommendations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="le-recorder-server-access">
+<h3>LE Recorder server Access<a class="headerlink" href="#le-recorder-server-access" title="Permalink to this headline">¶</a></h3>
+<p>At most, three types of users need access to the LE Recorder server:
+* Managers who will be reviewing recorded sessions
+* LE Studio PC administrator users
+* Administrators</p>
+<p>All other users should not have privileges to access the LE Recorder server.</p>
+</div>
+<div class="section" id="le-studio-user-privileges">
+<h3>LE Studio User Privileges<a class="headerlink" href="#le-studio-user-privileges" title="Permalink to this headline">¶</a></h3>
+<p>Live Expert agents should not have Administrator privileges on the LE Studio PC. The LE Recorder Transfer Service is a Windows 7 service that will have Administrator privileges.</p>
+</div>
+<div class="section" id="securing-files-in-transit">
+<h3>Securing Files in Transit<a class="headerlink" href="#securing-files-in-transit" title="Permalink to this headline">¶</a></h3>
+<p>Install an SSL Certificate on the LE Recorder Tomcat application server and ensure the “Use SSL” option is selected in the Enterprise configuration for the server.</p>
+</div>
+<div class="section" id="securing-files-at-rest">
+<h3>Securing Files at Rest<a class="headerlink" href="#securing-files-at-rest" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>LE Studio</dt>
+<dd>All recording files are stored in a directory that is configured in the Studio Settings through the LE Enterprise. This directory can be hidden from users without Administrator privileges on the LE Studio PC.</dd>
+<dt>LE Recorder Server</dt>
+<dd>Windows Server 2008 and 2012 include the BitLocker Drive Encryption feature, which protects the data stored on its volumes.</dd>
+</dl>
+</div>
+<div class="section" id="file-names">
+<h3>File Names<a class="headerlink" href="#file-names" title="Permalink to this headline">¶</a></h3>
+<p>The names of files stored on disk and their names when downloaded are different. This provides an additional level of obscurity on disk.</p>
+<dl class="docutils">
+<dt>On disk:</dt>
+<dd><code class="docutils literal"><span class="pre">{CallTimestamp}.{SessionLogId}.{UUID}.{SessionLogInteractionListId}.wmv</span></code></dd>
+<dt>When downloaded:</dt>
+<dd><code class="docutils literal"><span class="pre">Session{SessionLogID}-Interaction{SessionLogInteractionListId}-{YYYYMMDD}.wmv</span></code></dd>
+</dl>
+</div>
+</div>
+<div class="section" id="system-requirements">
+<h2>System Requirements<a class="headerlink" href="#system-requirements" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>LE Recorder Server<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Server Specifications:
+Intel Xeon E5 Processor
+8 GB RAM
+Hard Drive dependent on utilization, bitrate, and retention policy
+Gigabit Ethernet Drive
+Deploy an LE Recorder Server at each call center.
+Connecting the server to the call center’s local area network will significantly improve recording upload speeds by preventing the data from routing over the wide area network.</p>
+</div>
+<div class="section" id="id2">
+<h3>LE Studio<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>PC Specifications:
+Windows 7
+Core i5, at least
+2 GB RAM
+10 GB Available Hard Disk Space</p>
+</div>
+<div class="section" id="le-recording-review">
+<h3>LE Recording Review<a class="headerlink" href="#le-recording-review" title="Permalink to this headline">¶</a></h3>
+<p>Playback Codec:
+Video and audio recordings are encoded in Microsoft media formats. To view or listen to LE Recorder files, Windows Media Player 11 is required.
+Further, the Microsoft Expression Encoder Screen Capture Codec needs to be installed. See <a class="reference external" href="http://www.microsoft.com/en-us/download/details.aspx?id=10732">http://www.microsoft.com/en-us/download/details.aspx?id=10732</a> for more information.</p>
+</div>
+</div>
+<div class="section" id="frequently-asked-questions">
+<h2>Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>What gets recorded when an agent drags another application on top of the Studio window?</dt>
+<dd>The portion of the other application that is within the recorded area will be captured. The display is recorded just like the agent sees it.</dd>
+<dt>If the Studio application is being recorded, what happens when an agent has their video undocked?</dt>
+<dd>The area of the display being captured will include both the Studio window and video window.</dd>
+<dt>If the Studio application is being recorded, what happens when the agent drags the window across the display?</dt>
+<dd>While the agent is dragging the window, the original area of the display that was occupied by the Studio application will be recorded. When the agent drops the window, the recording will end. This is a known issues with the recording library we are using and we are working to correct it. If the studio window is dragged around the screen often, we recommend capturing the Primary Screen or All Screens.</dd>
+<dt>If the Studio application is being recorded, what happens when the window is partially off the screen?</dt>
+<dd>Only the portion of the Studio application that is visible on the screen will be recorded. Any portion that is off the screen will not be visible and therefore is not recorded.</dd>
+<dt>If a recording fails to be uploaded, is there any notification or evidence of this on the enterprise?</dt>
+<dd>No. Currently only uploaded recordings are visible in the Enterprise. Neither failed nor deleted recordings are accessible.</dd>
+<dt>If an agent closes the Studio application immediately after a call, will the recording still be uploaded to the Recorder Server?</dt>
+<dd>Not in all cases. If the Studio application is closed before the recording is fully prepared for upload, it will be left on the Studio machine and never uploaded to the server.</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  <hr/>
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, ClairVista, LLC.
+      Last updated on May 27, 2015.
+    </p>
+  </div>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'7.4.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+<div class="footer">This page uses <a href="http://analytics.google.com/">
+Google Analytics</a> to collect statistics. You can disable it by blocking
+the JavaScript coming from www.google-analytics.com.</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-190017-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

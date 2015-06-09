@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Expert Anywhere UI Configuration &mdash; Live Expert Documentation 7.7.0 documentation</title>
+  <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <link rel="icon" sizes="192x192" href="touch-icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+  
+
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+
+    <link rel="top" title="Live Expert Documentation 7.7.0 documentation" href="../../index.html"/>
+        <link rel="up" title="Anywhere UI Configuration" href="index.html"/>
+    
+    
+ 
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="../../index.html"> Live Expert Documentation</a>
+        
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" autocapitalize="off" autocorrect="off" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">User Guides</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../enterprise/index.html">Enterprise</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../enterprise/user.html">User Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../studio/index.html">Studio</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../studio/user.html">Studio User Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../station/index.html">Station User Interface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../station/walkthrough.html">User Interface Walkthrough</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../mobility/index.html">Mobility UI Walkthrough</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../mobility/comingsoon.html">Coming Soon!</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Anywhere UI Configuration</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Live Expert Anywhere UI Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-use-this-guide">How to Use This Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#live-expert-widget">Live Expert Widget</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#call-setup">Call Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#call-queue">Call Queue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#connecting">Connecting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#in-call">In Call</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#end-call-confirmation">End Call Confirmation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#questionnaire">Questionnaire</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#callback-form">Callback Form</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin/index.html">Admin Guides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../admin/networking/index.html">Networking Admin Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin/networking/admin.html">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin/networking/admin.html#live-expert-system">Live Expert System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin/networking/admin.html#live-expert-calling-session-data-flow">Live Expert Calling Session Data Flow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin/networking/admin.html#example-application-process">Example Application Process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin/networking/admin.html#le-station-video-options">LE Station Video Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin/networking/admin.html#total-bandwidth-requirements">Total Bandwidth Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin/networking/admin.html#other-important-network-factors">Other Important Network Factors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin/networking/admin.html#peer-to-peer-vs-relay">Peer to Peer vs. Relay</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin/networking/admin.html#network-protocols-ports-hosts">Network Protocols, Ports, &amp; Hosts</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../admin/studio/index.html">Studio</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin/studio/eyegaze.html">LE Studio Eye Gaze Solutions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin/studio/install.html">Studio Silent Install Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin/studio/rollback.html">How-to instructions for rolling back to a previous LE Studio version:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin/studio/user.html">Studio User Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../admin/station/index.html">Station</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin/station/admin.html">Station Admin Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../admin/anywhere/index.html">Anywhere UI Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin/anywhere/uiconfig.html">Live Expert Anywhere UI Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../admin/recorder/index.html">Recorder</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin/recorder/install.html">Installation Guide</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer/index.html">Developer Guides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../developer/anywhere/index.html">Anywhere</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../developer/anywhere/web.html">Web Developer Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../developer/mobility/index.html">Mobility Integration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../developer/mobility/comingsoon.html">Coming Soon!</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../developer/WebAPIs/index.html">Web APIs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../developer/WebAPIs/availability_check_api.html">Expert Availability Check API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developer/WebAPIs/data_export_api.html">Data Export API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developer/WebAPIs/oauth.html">OAuth Guide</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/index.html">Modules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../modules/collaborate/index.html">Collaborate</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../modules/collaborate/guide.html">Deployment Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../modules/companion/index.html">Companion</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../modules/companion/brief.html">Brief: Live Expert Companion for Existing Kiosks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../release_notes/index.html">Changes in Live Expert</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../release_notes/7.7.html">7.7</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.7.html#enhancements">Enhancements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.7.html#bug-fixes">Bug Fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../release_notes/7.6.html">7.6</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.6.html#cross-component">Cross Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.6.html#anywhere">Anywhere</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.6.html#enterprise">Enterprise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.6.html#studio">Studio</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../release_notes/7.5.html">7.5</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.5.html#cross-component">Cross Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.5.html#anywhere">Anywhere</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.5.html#enterprise">Enterprise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.5.html#station">Station</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.5.html#studio">Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.5.html#mobility">Mobility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.5.html#collaborate">Collaborate</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../release_notes/7.4.html">7.4</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.4.html#cross-component">Cross Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.4.html#enterprise">Enterprise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.4.html#studio">Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.4.html#station">Station</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.4.html#anywhere">Anywhere</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../release_notes/7.4.html#mobility">Mobility</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">Live Expert Documentation</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../index.html">User Guides</a> &raquo;</li>
+      
+          <li><a href="index.html">Anywhere UI Configuration</a> &raquo;</li>
+      
+    <li>Live Expert Anywhere UI Configuration</li>
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="live-expert-anywhere-ui-configuration">
+<h1>Live Expert Anywhere UI Configuration<a class="headerlink" href="#live-expert-anywhere-ui-configuration" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="how-to-use-this-guide">
+<h1>How to Use This Guide<a class="headerlink" href="#how-to-use-this-guide" title="Permalink to this headline">¶</a></h1>
+<p>The following pages show each of the user interface states in the LE Anywhere application.</p>
+<p>Where images are used to create the UI, a file name is provided. The corresponding file can be found in an associated archive containing these sample assets. Some message configuration is done in text rather than images and those are indicated as such.</p>
+</div>
+<div class="section" id="live-expert-widget">
+<h1>Live Expert Widget<a class="headerlink" href="#live-expert-widget" title="Permalink to this headline">¶</a></h1>
+<img alt="../../_images/widget1.png" src="../../_images/widget1.png" />
+<div class="section" id="implementation-options">
+<h2>Implementation Options<a class="headerlink" href="#implementation-options" title="Permalink to this headline">¶</a></h2>
+<p>When using the Live Expert Widget, there are two implementation options:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">Flash movie that is played once and paused on the last frame.</p>
+<blockquote>
+<div><p>File: /widget/movies/le-widget-tab-movie-2.swf</p>
+</div></blockquote>
+</li>
+<li><p class="first">Image</p>
+<blockquote>
+<div><p>File: /widget/imagesle-widget-tab-movie-flash-alternative.png</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+<p>Alternatively, you may use the Direct Access API referenced in the Developer Guide.</p>
+</div>
+</div>
+<div class="section" id="call-setup">
+<h1>Call Setup<a class="headerlink" href="#call-setup" title="Permalink to this headline">¶</a></h1>
+<p>The call setup process can involve allowing a selection between the type of interaction a user wishes to have, or specified directly in your implementation.</p>
+<img alt="../../_images/call_setup1.png" src="../../_images/call_setup1.png" />
+<div class="section" id="call-setup-dialog-1-call-type-options">
+<h2>Call Setup Dialog 1 - Call Type Options<a class="headerlink" href="#call-setup-dialog-1-call-type-options" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">Title: &#8220;LIVE CONSULTANTS STANDING BY&#8221;</p>
+<blockquote>
+<div><p>File: /app/images/setup-all-background.png</p>
+</div></blockquote>
+</li>
+<li><p class="first">Movie: &#8220;A SMILING AGENT...&#8221;</p>
+<blockquote>
+<div><p>File: /app/movies/setup-main.swf</p>
+</div></blockquote>
+</li>
+<li><p class="first">Instructions: &#8220;SELECT HOW YOU WANT TO CONNECT&#8221;</p>
+<blockquote>
+<div><p>File: /app/images/setup-main-msg.png</p>
+</div></blockquote>
+</li>
+<li><p class="first">Voice Chat</p>
+<blockquote>
+<div><p>File: /app/images/setup-main-btn-callType2.png</p>
+</div></blockquote>
+</li>
+<li><p class="first">Text Chat</p>
+<blockquote>
+<div><p>File: /app/images/setup-main-btn-callType4.png</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+<img alt="../../_images/voice1.png" src="../../_images/voice1.png" />
+</div>
+<div class="section" id="call-setup-dialog-2-flash-privacy-permission">
+<h2>Call Setup Dialog 2 - Flash Privacy Permission<a class="headerlink" href="#call-setup-dialog-2-flash-privacy-permission" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="call-queue">
+<h1>Call Queue<a class="headerlink" href="#call-queue" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="connecting">
+<h1>Connecting<a class="headerlink" href="#connecting" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="in-call">
+<h1>In Call<a class="headerlink" href="#in-call" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="end-call-confirmation">
+<h1>End Call Confirmation<a class="headerlink" href="#end-call-confirmation" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="questionnaire">
+<h1>Questionnaire<a class="headerlink" href="#questionnaire" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="callback-form">
+<h1>Callback Form<a class="headerlink" href="#callback-form" title="Permalink to this headline">¶</a></h1>
+</div>
+
+
+          </div>
+          <footer>
+  <hr/>
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, ClairVista, LLC.
+      Last updated on Jun 03, 2015.
+    </p>
+  </div>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'7.7.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-190017-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,330 @@
+==========
+User Guide
+==========
+
+--------
+Overview
+--------
+The Live Expert Enterprise is organized into tabs by category that allow you to configure and update your Live Expert experience.  The tabs available to you may vary according to your user’s permissions and the products your implementation utilizes.
+
+Home
+====
+Landing page introducing you your user’s available tabs, the Live Expert Studio installer, and its prerequisites.
+
+Company
+=======
+System-wide settings, including security, addresses for CSS, email hosts, LE Studio configuration and etc.
+
+Users
+=====
+Set up and maintain the users and administrators of the Live Expert system. Users may have any of the following roles: administrator, manager, expert.
+
+Locations
+=========
+(Live Expert Station Only) Records for information about the places where the Live Expert Stations are hosted.
+
+Stations
+========
+(Live Expert Station Only) Description and configuration for each Live Expert Station
+
+Reports
+=======
+Summary and detail for expert utilization and customer satisfaction across the Live Expert application.
+
+Callback
+========
+(Optional) With Live Expert Anywhere, customers can request to receive a call back from one of your experts. These requests can be managed through the Expert Enterprise here.
+
+Dashboard
+=========
+
+Recorder
+========
+(Optional) With the Live Expert Recorder, your Expert Studio sessions can be recorded for auditing, review, and quality assurance. These recordings can be managed through the Expert Enterprise here.
+
+Session
+=======
+
+-------
+Company
+-------
+Languages
+=========
+Adding a new Language
+---------------------
+Languages are configured in your Company Settings. Once added, an Expert can specify their proficiency of each Language.
+
+Instructions
+------------
+#. Navigate to the tab.
+#. Select Languages from the left-hand Navigation menu.
+#. Select .
+#. Click on the default language name of “Language Name” and language abbreviation of “LN” to edit.
+#. Select Update.
+
+Expert Call Types
+=================
+After a call is completed, an Expert has the opportunity to categorize the type of call that was received. These call types will then be reflected in reporting.
+
+Adding Expert Call Types
+------------------------
+To add a call type, click .
+Currently, Expert Call Types may not be removed.
+
+Updating the Sequence of Expert Call Types
+------------------------------------------
+The ordering of call types is reflected in the Live Expert Studio. You may find it best to have the most commonly used call types to be at the top of your sequence.
+
+To begin configuring, first click . This will allow you to drag and reorder the Expert Call Types.
+
+Once you are finished reordering the Expert Call Types, click  or, to save your new sequence or cancel, respectively.
+
+-----
+Users
+-----
+User Configuration
+==================
+Adding a new User
+-----------------
+Before you can designate a User as an Expert, you may need to add a new User.
+
+Instructions
+~~~~~~~~~~~~
+#. Navigate to the ``Company`` tab.
+#. Locate the Users panel, also available by selecting User List from the Navigation menu.
+#. Select ``Add Language``.
+
+Adding a new Expert
+-------------------
+In order to make a User an Expert you must already have defined Expertise Categories, Studio Settings, and Languages.
+
+Instructions
+~~~~~~~~~~~~
+#. Navigate to the ``Users`` tab.
+#. Locate the Users panel, also available by selecting User List from the Navigation menu.
+#. Double-click to edit a User.
+#. Locate the “User Role in the Expert Enterprise” section.
+#. Mark the box for the “Expert” role.
+#. Update the required details for your new Expert.
+#. Select the ``Save & Close`` button.
+
+--------------------
+Studio Configuration
+--------------------
+Unavailable Statuses
+====================
+Unavailable Statuses can be configured for Experts.
+
+Instructions
+------------
+#. Select the ``Users`` tab.
+#. Navigate to the ``Unavailable Statuses`` panel.
+#. To add a status, click ``Add New Status``.
+#. To edit a status, double-click your selection and update its corresponding Sequence or displayed Name.
+#. To remove a status, highlight your selection and click ``Delete This Status``.
+
+Session Setup Scripts
+=====================
+The scripts displayed in the Studio’s Session Setup Helper tab are configured for each Language you support. The Session Setup Helper is used for Anywhere sessions where the callTypeID is set to 1 with micEnabled and camEnabled set to false. Additionally, each Expert needs to have a value for “Expert Phone” and a Session Setup Studio tab configured.
+
+Instructions
+------------
+#. Select the ``Users`` tab.
+#. Navigate to the Session Setup Scripts panel.
+#. To add a script, click ``Add Script``.
+#. To edit a language’s scripts, double-click your selection and update its language and/or corresponding scripts.
+#. To remove a status, highlight your selection and click ``Delete Script``.
+
+Configuring Each Expert’s Phone Number
+--------------------------------------
+#. Select the ``Users`` tab.
+#. Navigate to User List panel.
+#. Double-click on a user who is defined as an Expert.
+#. Scroll down to the section labeled “Expert Display Information”.
+#. Update the field labeled “Expert Phone”.
+
+Expert Workflow
+===============
+These configurations will apply only to the Experts configured to use the Studio Settings for which they are customized. If you use multiple Studio Settings, these configurations will need to be applied separately.
+
+For more information on individual features, inline tooltips may be available by hovering over an icon as displayed blow:
+
+Adjusting the Call Invitation Timeout
+-------------------------------------
+This setting represents the number of settings that a call invitation is displayed for before setting a requested Expert to unavailable and sending a Call Invitation to the next available Expert.
+It enforces a minimum value of 5 seconds.
+
+Hiding the Decline Button from the Call Invitation
+--------------------------------------------------
+You may optionally remove the ability to Decline a Call Invitation by selecting the “Hide Invitation Decline Button” checkbox and saving the Studio Settings.
+
+Post Call Survey Notifications
+------------------------------
+To enable post call survey notification alerts, simply select the “Show Post Call Survey Notifications” checkbox and save the Studio Settings.
+ when enabled, notifications are displayed in the studio
+
+For more information, refer to the Studio User Guide; these alerts are independent of the Notification Tab configured in a later section.
+
+Call Notes
+==========
+You may optionally enforce a limit to the amount of time, in seconds, that can be spent after a call to enter Call Notes by deselecting the “Disable” checkbox.
+If the limit is reached, any entered Call Notes will be saved and closed, and the Expert’s status will be updated to Available.
+
+Modifying Tabs
+==============
+The order of your Live Expert Studio tabs can be modified through a User’s configured Studio Settings.
+
+Instructions
+------------
+#. Navigate to the ``Users`` tab.
+#. Select Studio Settings from the left-hand Navigation menu.
+#. Double-click to edit a listed Studio Setting.
+#. Scroll down to the “Studio Tab Ordering & Names” section.
+#. When finished, select the ``Save & Close`` button.
+
+Survey Results Tab
+------------------
+The Survey Results tab displays all of an agent’s survey responses for the current day in the Live Expert Studio, if it is enabled in the agent’s Studio Settings.
+
+For more information, refer to the Studio User Guide; this tab is configured independently of the Notification Alerts configured in a previous section.
+
+Session Setup Tab
+-----------------
+The Session Setup tab displays the Session Setup Helper in the Live Expert Studio, if it is enabled in an agent’s Studio Settings.
+
+In order for the Session Setup Tab to work properly, Session Setup Scripts and an Expert Phone Number must be defined (see Studio Configuration). For more information, refer to the Studio Guide.
+
+Home URLs
+=========
+There are two options available for Home URLs
+
+Web Browser Home URL
+--------------------
+This value sets the default home page for the primary browser window.
+
+Web Browser 2 Home URL
+----------------------
+This value sets the default home page for the secondary browser window.
+
+---------
+Locations
+---------
+Adding a new Location
+=====================
+Before a Station can be added, you will need to define a Location.
+
+Instructions
+------------
+#. Navigate to the ``Locations`` tab.
+#. Select ``Location List`` from the Navigation menu.
+#. Select ``Add Location``.
+
+Context Sources
+===============
+This feature allows you to display information in the Live Expert Studio based on the Location for a connected Station. For each piece of Location-based Studio content, a Context Source must be defined.
+Within the Base URL field, “<<POSTAL_CODE>>” will correspond to the Location’s Postal Code it will replace.
+ <<postal_code>> will be replaced by a location’s configured postal code when loaded in the studio’s location iframe.
+
+Instructions
+------------
+#. Navigate to the ``Locations`` tab.
+#. Select ``Context Sources`` from the Navigation menu.
+#. Select ``Add Context Source``.
+#. Select ``Location List`` from the Navigation menu.
+#. Double-click on a Location to which you wish to add a Context Source.
+
+Please note, websites must allow framing. If X-Frame-Options are set to DENY, then they will not display in the Studio’s Location frame.
+
+Custom Session Fields
+=====================
+This feature allows you to specify information prior to a call beginning that provides additional context for the session. The information is then displayed to an agent using the Live Expert Studio both when receiving the initial call invitation and during the session.
+
+Custom Session Fields are defined in the Live Expert Enterprise.
+
+Instructions
+------------
+#. Navigate to the ``Locations`` tab.
+#. Select ``Custom Fields`` from the Navigation menu.
+#. Select ``Add Custom Field``.
+
+--------
+Stations
+--------
+Adding a new Station
+====================
+Before adding a station you will need the following:
+
+- Location
+- Station Setting
+- Station Image Setting
+
+Instructions
+------------
+#. Navigate to the  tab.
+#. Locate the Stations General panel, also available by selecting Station List from the Navigation menu.
+#. Select .
+
+Setting Station Service Hours
+=============================
+(Optional) Records for information about the places where the Live Expert Stations are hosted.
+
+Live Expert Station Configuration
+=================================
+Note: You may also need to configure your individual Live Expert Stations to handle additional languages. Image assets are not currently handled through the Enterprise.
+
+-------
+Reports
+-------
+(Optional) Description and configuration for each Live Expert Station.
+
+-----------------------
+Expert Availability API
+-----------------------
+The expert availability API can be used to obtain information about the current call volumes in the system. This API is accessed by specifying a category or expert of interest. The response provides information about the number of agents logged in, their availability to take calls, and queue length for the specified category or agent.
+
+The Enterprise exposes this service at https://liveexpert.net/liveexpert/enterprise/ExpertAvailability via an HTTP GET request.
+
+Authentication
+==============
+Access to this API requires a valid OAuth authentication token. The scope associated with this interface is “expertAvailabilityCheck”. For more information about how to authenticate via the Enterprise’s OAuth interface refer to the Live Expert Enterprise - OAuth Guide.
+
+Request
+=======
+This service requires the following information to be provided by the client as URL parameters:
+expertID: The ID of the expert for which the the expert availability should be retrieved.
+categoryID: The ID of the category for which the expert availability should be retrieved. If this attributes is specified, the languageID attribute must also be specified.
+languageID: The ID of the language for which the expert availability should be retrieved.
+
+Response
+========
+In the case of a successful authentication request, this service will respond with an array of results, each of which will specify following information:
+
+  expertID
+    The ID of the expert for which this set of results is representative. This will be null if this set of results is not associated with an expert.
+
+  categoryID
+    The ID of the category for which this set of results is representative. This will be null if this set of results is not associated with an category.
+  
+  languageID
+    The ID of the language for which this set of results is representative. This will be null if this set of results is not associated with an language.
+
+  loggedInExperts
+    A count of the number of experts that are logged in and capable of taking a call with the specified settings. For checks that specify an expert ID, this value will be either 0 or 1, indicating whether the requested expert is logged in.
+
+  activeExperts
+    A count of the number of experts that are in an active status. Experts that are in call and working on after call work are reported as being in an active status. This excludes experts that are logged out, have set their status to unavailable, or are available and waiting for a call, providing a size of the expert pool that is currently busy, but has a high likelihood of becoming available in a reasonable period of time.
+
+  availableExperts
+    A count of the number of experts that are set to available and are actively waiting for a call to arrive.
+
+  queueLength
+    A count of the number of customers that are currently waiting to connect to an agent based on the specified settings. If a request were to be made with these settings, it would be queued behind this many other customers.
+
+In the case of an error or otherwise unsuccessful authentication request, the following information will be provided:
+
+  success
+    A boolean value. In cases in which the Enterprise is unable to process the request, a value of “false” will be returned on this key.
+
+  errorMessage
+    A string description of the error that was encountered in trying to process the associated request.
+

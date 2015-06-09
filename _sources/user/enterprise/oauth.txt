@@ -1,0 +1,53 @@
+===========
+OAuth Guide
+===========
+
+--------
+Overview
+--------
+OAuth is a standard authentication protocol used by many different web services around the internet. For additional information about the OAuth protocol in general, see their documentation at http://oauth.net/. The LE Enterprise uses the Two-Legged version of OAuth to allow client’s to authenticate with the server and in doing so gain access to otherwise restricted interfaces.
+
+This document will outline the requests required for a client to authenticate, the expected responses to these requests, and how the information from a successful response can be used to access a restricted interface.
+
+------------------------
+Obtaining an OAuth Token
+------------------------
+The Enterprise’s authentication interface is exposed at https://liveexpert.net/liveexpert/oauth/authorize which supports POST requests as defined below.
+
+Request Information
+===================
+This service requires the following information to be provided by the client:
+
+grant_type
+  Should always be client_credentials. This notifies the server that this is another application requesting access on it’s behalf and not on behalf of a user. The Enterprise only supports client credentials authentication.
+client_id
+  A string identifier of the system being authenticated. This will be provided by a member of the ClairVista engineering team upon request to integrate with an OAuth controlled interface.
+client_secret
+  A unique string identifier assigned to this service individually, allowing the Enterprise to validate that this request is in fact from a known service. This MUST be kept securely. If there is suspicion that a client’s secret has been compromised, we will be forced to update the secret.
+
+Response Information
+====================
+This service will respond with the following information in the case of a successful authentication request:
+
+token_type
+  The type of the token being responded. This will always be “LEAccess”.
+access_token
+  A unique string key that the requestor can use to access various restricted interfaces.
+scope
+  A semicolon separated list of the services that the requestor is permitted to access using this token.
+expires_in
+  The interval of validity for this token, specified in seconds. If the token is used after this window, restricted interfaces will return a 401 status and the requestor will need to re-authenticate to receive a new token.
+
+In the case of an error or otherwise unsuccessful authentication request, the following information will be provided:
+
+error
+  A string key indicating the type of error that was encountered.
+error_description
+  A string description of the relevant details about the error that was encountered.
+
+--------------------
+Using an OAuth Token
+--------------------
+Once a token has been obtained, it can be used to access the restricted APIs identified in the scope value of the response. The scope value is a set of keys, each of which identifies an API exposed on the Enterprise. To obtain access to additional scopes, please request this from a member of the ClairVista engineering team. The documentation for each of the Enterprise’s restricted APIs will document the OAuth scope associated with it.
+
+Authentication of access to restricted APIs in the Enterprise is done through the “Authorization” header field in the request. The structure of this header value should be “[TOKEN_TYPE] [ACCESS_TOKEN]” (the token type followed by the access token, separated with a single space).

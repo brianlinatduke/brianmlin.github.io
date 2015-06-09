@@ -1,0 +1,193 @@
+================
+UI Configuration
+================
+
+.. raw:: latex
+
+	\iffalse
+
+.. .. note:: A PDF version of this guide is available for :download:`download </_build/latex/AdminAnywhere.pdf>`.
+
+.. raw:: latex
+
+	\fi
+
+---------------------
+How to Use This Guide
+---------------------
+
+The following pages show the many user interface states in the LE Anywhere application. 
+
+Where images are used to create the UI, a file name is provided. The corresponding file can be found in an associated archive containing these sample assets. Some message configuration is done in text rather than images and will be indicated as such.
+
+------------------
+Live Expert Widget
+------------------
+
+.. image:: _static/widget.png
+
+Implementation Options
+=======================
+
+When using the Live Expert Widget, there are two implementation options:
+
+#. **Flash movie** that is played once and paused on the last frame
+	
+    File: /widget/movies/le-widget-tab-movie-2.swf
+	   
+#. **Image**
+	
+	File: /widget/imagesle-widget-tab-movie-flash-alternative.png
+	   
+Alternatively, you may use the Direct Access API referenced in the Developer Guide. 
+
+.. raw:: latex
+
+	\newpage
+
+----------
+Call Setup
+----------
+
+The call setup process can involve allowing a selection between the type of interaction a user wishes to have, or specified directly in your implementation.
+
+.. image:: _static/call_setup.png
+
+
+Call Setup Dialog 1 - Call Type Options 
+=======================================
+
+#. **Title**: ``LIVE CONSULTANTS STANDING BY``
+	   
+	File: /app/images/setup-all-background.png
+	   
+#. **Movie**: ``A SMILING AGENT...``
+	   
+	File: /app/movies/setup-main.swf
+	   
+#. **Instructions**: ``SELECT HOW YOU WANT TO CONNECT``
+	   
+	File: /app/images/setup-main-msg.png
+	   
+#. **Voice Chat** 
+	   
+	File: /app/images/setup-main-btn-callType2.png
+	   
+#. **Text Chat**
+	   
+	File: /app/images/setup-main-btn-callType4.png
+
+Call Setup Dialog 2 - Flash Privacy Permission
+==============================================
+
+.. image:: _static/voice.png
+
+#. **Title**: ``VOICE CHAT...``
+	   
+	File: /app/images/setup-main-head-noFlash.png
+	   
+#. **Title**: ``Click the Allow Button...``
+	   
+	File: /app/images/setup-security-msg.png
+	   
+#. **Arrow**
+	   
+	File: /app/images/setup-security-body-arrow.gif
+	  
+----------  
+Call Queue
+----------
+
+.. image:: _static/queue.png
+
+#. **Queue Message** - Can be either Flash movie or image file
+	   
+	Flash file: /app/images/movieCallQueue.swf
+	   
+	Image file: /app/images/callQueueFlashAlternate.png
+	   
+#. **Callback Button**: ``CALL ME BACK``
+       
+	File: /app/images/btnCallBack.png
+	   
+----------
+Connecting
+----------
+
+.. image:: _static/connect.png
+
+#. **Connecting Image**: ``Thanks! Connecting to your advisor.``
+       
+	File: /app/images/setup-connect-msg.png
+	  
+-------  
+In Call
+-------
+
+.. image:: _static/call.png
+
+#. **Agent Name**
+	   
+	Options: font, type color, background color
+	
+#. **Text Chat**
+	   
+	Options: font, type color, background color
+	   
+#. **Sidebar** (underneath video and video controls):
+	   
+	Options: background image, background color
+	   
+---------------------
+End Call Confirmation 
+---------------------
+
+.. image:: _static/end.png
+
+#. **Message Copy**: ``Are you sure you want to end this call?``
+	   
+	Message configuration file
+	   
+#. **Button Labels**: Yes - ``Yes, end call``; No - ``No, keep talking``
+	   
+	Message configuration file
+	   
+-------------
+Questionnaire 
+-------------
+
+.. image:: _static/question.png
+
+#. **Dialog Title**: ``Please rate your experience.``
+	   
+	Options: Message copy, font, type color
+	   
+#. **Images**
+   		
+	* /app/images/Smiley-Happy.png
+		 
+	* /app/images/Smiley-OK.png
+		 
+	* /app/images/Smiley-Sad.png
+	   
+#. **Comments Title**: ``Have any additional comments?``
+	   
+	Options: Message copy, font, type color
+	   
+#. **Button Submit**: ``Submit``
+	   
+	Options: Label copy, font, type color
+	   
+-------------
+Callback Form
+-------------
+
+.. image:: _static/callback.png
+
+#. **Top Message**: ``Consultation Service Hours:``
+	   
+	Options: The message is configurable
+	   
+#. **Button Labels**: ``Yes!``, ``No thanks.``
+	   
+	Options: Label values

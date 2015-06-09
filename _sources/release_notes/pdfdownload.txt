@@ -1,0 +1,2 @@
+.. note:: A PDF version of these release notes is available for :download:`download </_build/latex/Release.pdf>`
+

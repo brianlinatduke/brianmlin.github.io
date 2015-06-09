@@ -1,0 +1,74 @@
+===
+7.5
+===
+
+---------------
+Cross Component
+---------------
+
+Enhancements
+============
+* Added the ability to manage Station assets from the Live Expert Enterprise (#4655).
+* Added the ability to hide Live Expert Station navigation buttons (Home, Back, and Forward) from the Live Expert Enterprise (#4688).
+
+--------
+Anywhere
+--------
+
+Enhancements
+============
+* Removed close buttons from call setup dialog boxes when requesting an agent (#4854).
+
+Bug Fixes
+=========
+* Fixed an issue where a call currently in large video mode could revert to small video mode if the web browser was refreshed (#4743).
+* Fixed an issue where a message notifying a user that the Live Expert Studio agent's camera is paused overlapped the client local video (#4773).
+
+----------
+Enterprise
+----------
+
+Enhancements
+============
+* Added the ability to create multi-button widgets from the Live Expert Enterprise's Widget Builder (#4790).
+* Added the ability to view all session history by date on the Session tab without specifying an expert or location (#4838).
+
+Bug Fixes
+=========
+* Fixed an issue where the Session tab would display Live Expert Mobility calls as "anywhere" (#4703).
+
+-------
+Station
+-------
+
+Bug Fixes
+=========
+* Fixed an issue where a dual screen Station with multiple languages configured could not return to its default configured language when a call was not completed (#4866).
+
+------
+Studio
+------
+
+Enhancements
+============
+* Replaced the integrated web browser control with Chromium and updated the Studio browser's user interface (#4719).
+
+Bug Fixes
+=========
+* Fixed an issue where the Live Expert Studio's ``Restart`` button could not work in some cases where the initial establishment of an audio/video connection is unsuccessful (#4860).
+
+--------
+Mobility
+--------
+
+Bug Fixes
+=========
+* Fixed an issue where a banner indicating that recording is in progress did not appear when a Live Expert Mobility application was minimized (#4219).
+
+-----------
+Collaborate
+-----------
+
+Bug Fixes
+=========
+* Fixed an issue where cobrowsing would not work when using Safari 8.0.2 (#4471).
